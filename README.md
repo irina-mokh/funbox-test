@@ -1,46 +1,68 @@
-# Getting Started with Create React App
+## Q1 Хорошая верстка с точки зрения
+-пользователя:  
+  верстка удобная, не ломается(переполнение, скрытие контента,..), не « скачет» при отрисовке;  
+-менеджера проекта:  
+  возможность быстрых изменений в случае корректировки ТЗ;  
+-дизайнера:  
+  полностью соответствующая его великолепно исполненному макету)  
+-клиентского программиста:  
+предсказуемая и понятная с точки зрения именования классов;  
+-серверного программиста:   
+предполагаю, что верстка должны быть готова к любым поворотам судьбы(загрузкам, падениям и ошибкам)  
+-верстальщика:   семантичная, кроссбраузерная + все вышеперечисленное:nerd_face:  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Q2 Опишите основные особенности верстки крупных многостраничных сайтов, дизайн которых может меняться в процессе реализации и поддержки.
+- Регулярные изменения в дизайне проще обрабатывать внедряя реиспользование компонентов, использование переменных.
 
-In the project directory, you can run:
+Расскажите о своем опыте верстки подобных сайтов: какие методологии, инструменты и технологии вы применяли на практике.
+- Использую БЭМ и SCSS. На последнем проекте использовала React и библиотеку MUI.
 
-### `npm start`
+## Q3 Опишите основные особенности верстки сайтов, которые должны одинаково хорошо отображаться как на любом современном компьютере, так и на смартфонах и планшетах под управлением iOS и Android. Расскажите о своем опыте верстки подобных сайтов: какие инструменты и технологии вы применяли, как проверяли результат на различных устройствах, какие именно устройства требовалось поддерживать.
+Адаптивность страницы проверяю использую DevTools. Для проверки отображения в разных браузерах существует ряд онлайн сервисов, но откровенно говоря, опыта работы с ними у меня нет. В рамках учебных проектов я проверяла «руками».
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Q4 Расскажите, какие инструменты помогают вам экономить время в процессе написания, проверки и отладки кода.
+-	Пользуюсь webpack, имею представление о его настройке, 
+-	немного пользовалась Gulp, 
+-	eslint,
+-	prettier,
+-	husky,
+## Q5 Вам нужно понять, почему страница отображается некорректно в Safari на iOS и в IE на Windows. Код писали не вы, доступа к исходникам у вас нет. Ваши действия?
+Ввиду отсутствия исходников, затрудняюсь ответить.
+IE, возможно, уже нет необходимости поддерживать в связи с завершением его карьеры:hand_over_mouth: 
+### Сталкивались ли вы с подобными проблемами на практике?
+на практике не сталкивалась
+## Q6 Дизайнер отдал вам макет, в котором не показано, как должны выглядеть интерактивные элементы при наведении мыши. Ваши действия?
+Уточню этот момент у дизайнера и попрошу добавить. В случае отсутствия такой возможности, предварительно согласовав со старшим, можно добавить эффекты имея другие прототипы такого эффекта в макете.
+## Q7 Какие ресурсы вы используете для развития в профессиональной сфере? 
+### Приведите несколько конкретных примеров (сайты, блоги и так далее).
+- MDN
+- хабр
+- Сodewars
+- CSS tricks
+- Веб-стандарты
+- Журнал «Код» и т.д.
+### Какое направление развития вам более близко: JS-программирование, HTML/CSS-верстка или что-то ещё?
+ начала обучение с верстки, но в процессе поняла, что frontend  целиком более интересен.
+### Какие ещё области знаний, кроме тех, что непосредственно относятся к работе, вам интересны?
+- Ранее работала в сфере строительства, периодически слежу за новыми технологиями в нем.
+- Люблю excel:nerd_face:	
+- Интересуюсь английским и повышением его уровня.
+- Нравится тренировать мозг по части общей эрудиции(квизы)
+## Q8 Расскажите нам о себе и предоставьте несколько ссылок на последние работы, выполненные вами.
+ - С 2021г. Решила сменить сферу деятельности на что-то более интересное. Прошла ряд курсов(см. резюме).
+Хобби: велопрогулки, путешествия, игра на гитаре, люблю делать что-то руками.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Деплой тестового:
+https://cute-otter-f3659c.netlify.app
 
-### `npm test`
+https://github.com/irina-mokh
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Командный таск на курсе React(выполняла функции лида):
+https://github.com/irina-mokh/project-management-app
 
-### `npm run build`
+Самостоятельный таск на курсе React:
+https://github.com/irina-mokh/react-travel-app
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Командный таск на курсе JS/ Frontend:
+https://github.com/Anasstassia/rslang
