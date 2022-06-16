@@ -1,0 +1,26 @@
+@use '../../styles/vars';
+
+.app {
+  margin: 0;
+  height: 100vh;
+  overflow: auto;
+  background-image:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 5e-05) 49.88%, rgba(0, 0, 0, 0.5) 100%),
+    url('../../assets/images/Pattern.png');
+  &__heading {
+    display: block;
+    margin: 1em auto 24px auto;
+    color: vars.$white;
+    font-size: 36px;
+    text-align: center;
+  }
+  .catalog {
+    display: flex;
+    padding: 0;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    &__item {
+      list-style: none;
+    }
+  }
+}

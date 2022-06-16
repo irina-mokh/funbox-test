@@ -1,0 +1,9 @@
+@use './vars';
+
+@mixin changeColor($color) {
+  border-color: $color;
+  background-image: linear-gradient(135deg, transparent 4%, $color 4% 5%, vars.$light 5% 100%);
+  .card__weight {
+    background-color: $color;
+  }
+}

@@ -1,0 +1,116 @@
+@use '../../styles/vars';
+@use '../../styles/mixins';
+
+.card {
+  position: relative;
+  box-sizing: border-box;
+  width: 320px;
+  height: 480px;
+  border: 4px solid transparent;
+  border-radius: 0 12px 12px 12px;
+  padding: 17px 50px;
+  font-family: 'Trebuchet MS';
+  clip-path: polygon(40px 0%, 100% 0, 100% 100%, 0 100%, 0% 40px);
+  cursor: pointer;
+  @include mixins.changeColor(vars.$blue);
+
+  &:hover {
+    @include mixins.changeColor(vars.$light-blue);
+  }
+  
+  &_checked {
+    @include mixins.changeColor(vars.$pink);
+
+    &:hover {
+      @include mixins.changeColor(vars.$light-pink);
+      .card__hint {
+        color: vars.$pink;
+      }
+    }
+  }
+  &_disabled {
+    filter: grayscale(1);
+    &:hover {
+      @include mixins.changeColor(vars.$blue);
+
+    }
+    cursor: auto;
+    & + .card__description {
+      color: vars.$yellow;
+    }
+  }
+
+  &__hint{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: vars.$gray;
+    margin: 0;
+  }
+  &__title{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    margin: 5px 0 0 0;
+  }
+  &__taste{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0 0 15px 0;
+  }
+  &__img{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+  &__amount,
+  &__gift,
+  &__extra{
+    color: vars.$gray;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0;
+  }
+  &__weight{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    bottom: 12px;
+    right: 12px;
+    box-sizing: border-box;
+    background-color: vars.$blue;
+    color: vars.$white;
+    border-radius: 50%;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 42px;
+    padding: 7px 0 0 0;
+    font-weight: 400;
+    text-align: center;
+    & > span {
+      display: block;
+      font-size: 21px;
+      line-height: 22px;
+
+    }
+  }
+
+  &__description {
+    color: vars.$white;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+  }
+  &__buy {
+    color: vars.$blue;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
